@@ -2,11 +2,18 @@ require 'spec_helper'
 require './autopair'
 
 describe Pair do
-subject {Pair.new.generate}
 
- it "generates a random name from array to see if it exists in array" do
+	subject {Pair.new}
 
+  describe "#generate" do
+  	it 'returns a random name from the names array' do
+        subject.names.should include(subject.generate)
 
- subject {should match @names} 
- end
-end 
+        puts "#{subject.names} should include #{subject.generate}"
+         
+       
+  	end
+  	
+	end
+
+end
