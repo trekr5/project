@@ -4,8 +4,12 @@ class Password
   attr_accessor :pass_in, :data
 
   def initialize
-    # variable that stores password length 
+    
+    # @pass_in that stores password length 
     @pass_in
+
+
+    # @data stores data for the program
     @data = ("!".."/").to_a + ("a".."z").to_a + ("0".."9").to_a	   
     
   end
