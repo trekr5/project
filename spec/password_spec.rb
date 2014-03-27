@@ -12,10 +12,10 @@ describe Password do
    		end
    	end
 
-		describe "#generate" do	
+		 describe "#generate" do	
 			before do
 				subject.pass_in = 5
-			end
+		  end
    		
    		it "takes a random sample of the seed character and punctuation array data" do
    			subject.data.should_receive(:sample).with(subject.pass_in).and_call_original

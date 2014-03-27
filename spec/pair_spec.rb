@@ -3,6 +3,7 @@ require './autopair'
 
 describe Pair do
 
+# check line 7 and see if rspec test runs if commented out
 	subject {Pair.new}
 
   describe "#generate" do
