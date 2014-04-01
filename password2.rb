@@ -1,6 +1,5 @@
+#!/usr/bin/ruby
 
-
-#!/usr/bin/env ruby
 
 class Password
 
@@ -17,11 +16,12 @@ class Password
     
   end
 
-  def start(a)
-     #ARGV.each do |x|
-     # puts "Argument: #{x}"
-     #end
-    @a = a
+  def start
+     ARGV.each do |x|
+      puts "Argument passed is: #{x}"
+       @a = x.to_i
+
+      end
     generate
   end
 
@@ -33,4 +33,4 @@ class Password
 
 end
 
-Password.new.start(10)
+Password.new.start
